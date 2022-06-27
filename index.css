@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(26deg 38% 92%);
+
+}
+.container{
+    display: flex;
+    height: 450px;
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.image{
+    position: relative;
+    background-image: url(images/desktop.jpg);
+    width: 300px;
+    background-size: 300px;
+}
+.elements{
+    width: 300px;
+
+}
+.elements .text{
+    position: relative;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.elements .text h3{
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 4px;
+
+}
+.elements .text h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px;
+    line-height: 1.1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.elements .text p{
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+.elements .button{
+    position: relative;
+    padding: 0px 25px;
+}
+.elements .button h1{
+    
+    display: inline-block;
+    color: hsl(158, 36%, 37%);
+
+}
+.elements .button h1 del{
+    font-size: 16px;
+    margin: 30px;
+    color: hsl(228, 12%, 48%);
+
+}
+.elements .button button{
+    position: relative;
+    padding: 15px 4.3rem;
+    margin: 25px 0px;
+    cursor: pointer;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 10px;
+
+}
+.elements .button button:hover{
+    background-color: hsl(150, 93%, 17%);
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.elements .button img{
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 343px;
+        height: 600px;
+        display: inline;
+        transition: 0.5s all;
+    }
+    .container .image{
+        width: 343px;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-image: url(images/mobile.jpg);
+        background-size: cover;
+        transition: 0.5s ease-in;
+        
+    }
+    .container .elements{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 343px;
+        transition: 0.5s all;
+
+    }
+    .elements .text{
+        padding: 20px;
+    }
+    .elements .text h3{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .elements .text h1{
+        padding: 10px 0px;
+    }
+    .elements .button button{
+        
+    padding: 15px 6em;
+    }
+}
